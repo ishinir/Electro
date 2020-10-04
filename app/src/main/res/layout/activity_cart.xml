@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".cart">
+
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="596dp"
+        android:layout_height="1285dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.408"
+        app:srcCompat="@drawable/backgroundnew"
+        tools:layout_editor_absoluteX="-82dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton5"
+        android:layout_width="26dp"
+        android:layout_height="32dp"
+        app:srcCompat="@drawable/delete"
+        tools:layout_editor_absoluteX="405dp"
+        tools:layout_editor_absoluteY="141dp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="189dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="1dp"
+        android:contentDescription="@string/logo"
+        app:layout_constraintEnd_toStartOf="@+id/carttxt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/background3__3_" />
+
+    <EditText
+        android:id="@+id/item"
+        android:layout_width="255dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="52dp"
+        android:background="#D5CDE4"
+        android:ems="10"
+        android:enabled="false"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:text="@string/item"
+        android:textAlignment="center"
+        android:textColor="#070707"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/carttxt" />
+
+    <EditText
+        android:id="@+id/carttxt"
+        android:layout_width="241dp"
+        android:layout_height="33dp"
+        android:background="#D5CDE4"
+        android:ems="10"
+        android:enabled="false"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:text="@string/your_basket"
+        android:textAlignment="center"
+        android:textColor="#050505"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/price"
+        android:layout_width="175dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="52dp"
+        android:background="#D5CDE4"
+        android:ems="10"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:text="PRICE"
+        android:enabled="false"
+        android:textAlignment="center"
+        android:textColor="#100F0F"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/item"
+        app:layout_constraintTop_toBottomOf="@+id/carttxt" />
+
+    <TextView
+        android:id="@+id/item1"
+        android:layout_width="256dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toStartOf="@+id/price1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/item" />
+
+    <TextView
+        android:id="@+id/item2"
+        android:layout_width="256dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="4dp"
+        android:background="#9AFFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/item1" />
+
+    <TextView
+        android:id="@+id/item3"
+        android:layout_width="256dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toStartOf="@+id/price3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/item2" />
+
+    <TextView
+        android:id="@+id/item4"
+        android:layout_width="256dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="4dp"
+        android:background="#9AFFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/item3" />
+
+    <TextView
+        android:id="@+id/item5"
+        android:layout_width="256dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/item4" />
+
+    <TextView
+        android:id="@+id/price1"
+        android:layout_width="175dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/item1"
+        app:layout_constraintTop_toBottomOf="@+id/price" />
+
+    <TextView
+        android:id="@+id/price4"
+        android:layout_width="175dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="4dp"
+        android:background="#9AFFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/item4"
+        app:layout_constraintTop_toBottomOf="@+id/price3" />
+
+    <TextView
+        android:id="@+id/price6"
+        android:layout_width="178dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="8dp"
+        android:background="#D5CDE4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/totalPrice"
+        app:layout_constraintTop_toBottomOf="@+id/price5" />
+
+    <TextView
+        android:id="@+id/price5"
+        android:layout_width="175dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/item5"
+        app:layout_constraintTop_toBottomOf="@+id/price4" />
+
+    <TextView
+        android:id="@+id/price3"
+        android:layout_width="175dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/item3"
+        app:layout_constraintTop_toBottomOf="@+id/price2" />
+
+    <TextView
+        android:id="@+id/price2"
+        android:layout_width="175dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="4dp"
+        android:background="#9AFFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/item2"
+        app:layout_constraintTop_toBottomOf="@+id/price1" />
+
+    <EditText
+        android:id="@+id/totalPrice"
+        android:layout_width="256dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginRight="1dp"
+        android:background="#D5CDE4"
+        android:ems="10"
+        android:enabled="false"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:text="@string/total_price"
+        android:textAlignment="center"
+        android:textColor="#070707"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toStartOf="@+id/price6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/item5" />
+
+    <Button
+        android:id="@+id/shopbtn"
+        android:layout_width="225dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="250dp"
+        android:layout_marginBottom="100dp"
+        android:background="@drawable/backbtn"
+        android:text="@string/continue_shopping"
+        android:textColor="#050505"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/totalPrice" />
+
+    <Button
+        android:id="@+id/pay"
+        android:layout_width="159dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="250dp"
+        android:layout_marginLeft="250dp"
+        android:layout_marginTop="7dp"
+        android:background="@drawable/backbtn"
+        android:text="BUY NOW"
+        android:textColor="#050505"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/price6" />
+
+    <ImageButton
+        android:id="@+id/delete1"
+        android:layout_width="26dp"
+        android:layout_height="32dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginRight="1dp"
+        app:layout_constraintBottom_toBottomOf="@+id/price1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/price"
+        app:srcCompat="@drawable/delete" />
+
+    <ImageButton
+        android:id="@+id/delete2"
+        android:layout_width="26dp"
+        android:layout_height="32dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginRight="1dp"
+        app:layout_constraintBottom_toTopOf="@+id/price3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/price1"
+        app:srcCompat="@drawable/delete" />
+
+    <ImageButton
+        android:id="@+id/delete3"
+        android:layout_width="26dp"
+        android:layout_height="32dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginRight="1dp"
+        app:layout_constraintBottom_toBottomOf="@+id/price3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/price3"
+        app:srcCompat="@drawable/delete" />
+
+    <ImageButton
+        android:id="@+id/delete4"
+        android:layout_width="26dp"
+        android:layout_height="32dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginRight="1dp"
+        app:layout_constraintBottom_toBottomOf="@+id/price4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/price4"
+        app:srcCompat="@drawable/delete" />
+
+    <ImageButton
+        android:id="@+id/delete5"
+        android:layout_width="26dp"
+        android:layout_height="32dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginRight="1dp"
+        app:layout_constraintBottom_toBottomOf="@+id/price5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/price4"
+        app:srcCompat="@drawable/delete" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
